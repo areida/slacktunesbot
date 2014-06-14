@@ -4,7 +4,7 @@
   * Grooveshark: `https://raw.githubusercontent.com/areida/slacktunesbot/master/groovesharkbot.js`
   * Pandora: `https://raw.githubusercontent.com/areida/slacktunesbot/master/pandorabot.js`
   * Rdio: `https://raw.githubusercontent.com/areida/slacktunesbot/master/rdiobot.js`
-2. Build a javscript file from this template:
+2. Build a javscript bookmarklet from this template:
     ``` javascript
     javascript: (function () {
     	var scriptSource        = '[script source]';
