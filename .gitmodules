@@ -1,0 +1,3 @@
+[submodule "spotifybot"]
+	path = spotifybot
+	url = git@github.com:areida/spotifybot.git
