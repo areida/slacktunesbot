@@ -1,0 +1,53 @@
+{
+  "name": "Slacktunesbot",
+  "manifest_version" : 2,
+  "version": "0.0.0",
+  "description": "Posts the current playing song to a Slack webhook.",
+  "icons": {
+    "128": "images/icon-128x128.png"
+  },
+  "permissions": ["storage"],
+  "background": {
+    "persistent": false,
+    "scripts": ["js/background.js"]
+  },
+  "content_scripts": [
+      {
+          "matches": [
+            "http://amazon.com/*",
+            "https://amazon.com/*",
+            "http://www.amazon.com/*",
+            "https://www.amazon.com/*"
+          ],
+          "js": ["vendor/jquery.min.js", "js/amazonprime.js"]
+      },
+      {
+          "matches": [
+            "http://grooveshark.com/*",
+            "https://grooveshark.com/*",
+            "http://www.grooveshark.com/*",
+            "https://www.grooveshark.com/*"
+          ],
+            "js": ["vendor/jquery.min.js", "js/grooveshark.js"]
+      },
+      {
+          "matches": [
+            "http://pandora.com/*",
+            "https://pandora.com/*",
+            "http://www.pandora.com/*",
+            "https://www.pandora.com/*"
+          ],
+          "js": ["vendor/jquery.min.js", "js/pandora.js"]
+      },
+      {
+          "matches": [
+            "http://rdio.com/*",
+            "https://rdio.com/*",
+            "http://www.rdio.com/*",
+            "https://www.rdio.com/*"
+          ],
+          "js": ["vendor/jquery.min.js", "js/rdio.js"]
+      }
+  ],
+  "options_page": "html/options.html"
+}
