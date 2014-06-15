@@ -17,7 +17,7 @@ javascript:(function() {
         var $songID     = $('.App_PlayerFooter .text_metadata .drag_container');
         var $username   = $('.username_link');
 
-        if ($songID.length && (currentSongID !== $songID.text()))
+        if ($songID.length && $username.length && (currentSongID !== $songID.text()))
         {
             var payload = {
                 icon_emoji : iconEmoji,

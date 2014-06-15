@@ -15,7 +15,7 @@ javascript:(function() {
         var $username   = $('.greeting');
         var songID      = $artistName.text() + ' - ' + $songName.text();
 
-        if ($artistName.text() && $songName.text() && (currentSongID !== songID))
+        if ($artistName.length && $songName.length && $username.length && (currentSongID !== songID))
         {
             var usernameParts = $username.text().split(' ');
             var payload = {

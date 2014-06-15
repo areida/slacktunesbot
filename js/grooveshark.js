@@ -16,7 +16,7 @@ javascript:(function() {
 
         var songID = $artistName.text() + ' - ' + $songName.text();
 
-        if ($artistName.text() && $songName.text() && (currentSongID !== songID))
+        if ($artistName.length && $songName.length && $username.length && (currentSongID !== songID))
         {
             var payload = {
                 icon_emoji : iconEmoji,
