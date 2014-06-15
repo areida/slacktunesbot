@@ -7,10 +7,6 @@
     "128": "images/icon-128x128.png"
   },
   "permissions": ["storage"],
-  "background": {
-    "persistent": false,
-    "scripts": ["js/background.js"]
-  },
   "content_scripts": [
       {
           "matches": [
