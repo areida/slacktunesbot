@@ -6,3 +6,5 @@
 1. Locate the folder for this application in your computer
 1. Listen to music on Amazon Prime, Grooveshark, Pandora, or Rdio
   * You must be logged in
+
+For Spotify see [Spotifybot](https://github.com/areida/spotifybot)
