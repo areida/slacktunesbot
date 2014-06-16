@@ -15,7 +15,7 @@ javascript:(function() {
         var $username   = $('.userName');
         var songID      = $artistName.text() + ' - ' + $songName.text();
 
-        if ($artistName.length && $songName.length && $username.length && $artistName.text() !== 'audioload' && $artistName.text() !== 'ad' && $username.text() !== '' && (currentSongID !== songID))
+        if ($artistName.length && $songName.length && $username.length && $artistName.text() !== 'audioad' && $artistName.text() !== 'ad' && $username.text() !== '' && (currentSongID !== songID))
         {
             var payload = {
                 icon_emoji : iconEmoji,
