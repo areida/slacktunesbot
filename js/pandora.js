@@ -15,7 +15,7 @@ javascript:(function() {
         var $username   = $('.userName');
         var songID      = $artistName.text() + ' - ' + $songName.text();
 
-        if ($artistName.length && $songName.length && $username.length && (currentSongID !== songID))
+        if ($artistName.length && $songName.length && $username.length && $artistName.text() !== 'audioload' && $artistName.text() !== 'ad' && $username.text() !== '' && (currentSongID !== songID))
         {
             var payload = {
                 icon_emoji : iconEmoji,
@@ -38,7 +38,7 @@ javascript:(function() {
             {
                 if ( ! webhookSubdomain)
                     throw 'Error: missing webhook subdomain';
-             
+
                 if ( ! webhookToken)
                     throw 'Error: missing webhook token';
             }
