@@ -6,7 +6,7 @@ javascript:(function() {
     var webhookUri = 'slack.com/services/hooks/incoming-webhook?token=';
 
     function linkify($link) {
-        return '<' + $link.attr('href') + '|' + $link.text() +'>';
+        return $link.text();
     };
 
     function updateSongStatus() {
@@ -39,7 +39,7 @@ javascript:(function() {
             {
                 if ( ! webhookSubdomain)
                     throw 'Error: missing webhook subdomain';
-             
+
                 if ( ! webhookToken)
                     throw 'Error: missing webhook token';
             }
